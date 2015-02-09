@@ -1,0 +1,10 @@
+<html>
+<head>
+    <title>Venus</title>
+</head>
+<body>
+    {% for (var chunk in o.htmlWebpackPlugin.assets) { %}
+    <script src="{%=o.htmlWebpackPlugin.assets[chunk]%}"></script>
+    {% } %}
+</body>
+</html>

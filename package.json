@@ -1,0 +1,23 @@
+{
+  "name": "venus",
+  "version": "0.1.0",
+  "description": "es6, webpack, virtual dom, koa",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/larsthorup/venus.git"
+  },
+  "author": "lars@zealake.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/larsthorup/venus/issues"
+  },
+  "homepage": "https://github.com/larsthorup/venus",
+  "devDependencies": {
+    "html-webpack-plugin": "^1.1.0",
+    "webpack": "^1.5.3"
+  }
+}
