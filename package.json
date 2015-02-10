@@ -4,7 +4,7 @@
   "description": "es6, webpack, virtual dom, koa",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack --progress --colors"
+    "webpack": "webpack --progress --colors --config config/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/larsthorup/venus",
   "devDependencies": {
+    "css-loader": "^0.9.1",
+    "extract-text-webpack-plugin": "^0.3.8",
     "html-webpack-plugin": "^1.1.0",
+    "style-loader": "^0.8.3",
     "webpack": "^1.5.3"
   }
 }

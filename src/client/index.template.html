@@ -1,10 +1,13 @@
 <html>
 <head>
     <title>Venus</title>
+    {% for (var chunk in o.webpack.assetsByChunkName) { %}
+    <link href="{%=o.webpack.assetsByChunkName[chunk][1]%}" rel="stylesheet"/>
+    {% } %}
 </head>
 <body>
-    {% for (var chunk in o.htmlWebpackPlugin.assets) { %}
-    <script src="{%=o.htmlWebpackPlugin.assets[chunk]%}"></script>
+    {% for (var chunk in o.webpack.assetsByChunkName) { %}
+    <script src="{%=o.webpack.assetsByChunkName[chunk][0]%}"></script>
     {% } %}
 </body>
 </html>
